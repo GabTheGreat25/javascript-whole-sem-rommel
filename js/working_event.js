@@ -1,4 +1,5 @@
 function clickHandler(e) {
+  console.log(e.target, e.data);
   $("#" + e.data.objId).html(
     e.target.id + " says " + e.data.answer + " at X postion: " + e.screenX
   );

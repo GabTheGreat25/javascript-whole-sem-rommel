@@ -14,7 +14,7 @@ function setOdd() {
 }
 function setFirst4() {
   $("li, span").css("font-weight", "");
-  var $first4 = $("li:lt(4)");
+  var $first4 = $("li:lt(4)"); //less than
   $first4.css("font-weight", "bold");
   $("span:contains('First 4')").css("font-weight", "bold");
   $(".label").html("First 4");

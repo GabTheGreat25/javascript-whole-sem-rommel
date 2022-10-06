@@ -27,11 +27,11 @@ $(document).ready(function () {
     $("#formB input:checked").prop("checked", false);
     $("#formB input:image").attr("src", "");
   });
-  $("#serializeB").click(function (e) {
+  $("#serializeB").click(function () {
     $("#serialized").html($("#formA").serialize());
     $("#serializedA").empty();
     var arr = $("#formA").serializeArray();
-    jQuery.each(arr, function (i, prop) {
+    jQuery.each(arr, function (prop) {
       $("#serializedA").append(
         $("<p>" + prop.name + " = " + prop.value + "</p>")
       );

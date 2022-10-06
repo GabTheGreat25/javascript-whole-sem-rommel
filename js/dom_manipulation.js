@@ -22,7 +22,7 @@ $(document).ready(function () {
         width: size,
         height: size,
       });
-      $("div").append(span);
+      $("div").prepend(span); //first child | append last child
     }
   });
 });
